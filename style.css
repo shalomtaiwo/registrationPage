@@ -8,6 +8,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
   width: 100%;
 }
 .body {
