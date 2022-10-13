@@ -320,7 +320,7 @@ input:focus:invalid, select:focus:invalid {
             font-size: 12px;
           }
           label {
-            width: 85px !important;
+            width: 95px !important;
             font-size: 14px;
             padding: 7px 5px;
           }
