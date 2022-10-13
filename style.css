@@ -267,6 +267,7 @@ input:focus:invalid, select:focus:invalid {
         display: block;
         width: 100%;
         height: 100vh;
+        overflow: hidden;
     }
     .col-left, .col-right{
         display: flex;
