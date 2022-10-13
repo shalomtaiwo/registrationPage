@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="signUp">
+        <a href="#login">Log In</a>
+        <a href="#register">Register</a>
+    </div>
+    <div class="body">
+      <div class="col-left show" id="login">
+        <div class="col-login">
+          <div class="col-left-login">
+            <a>Log In</a>
+          </div>
+          <form action="/dashboard.html">
+            <div class="col-input-left">
+              <label>Email:</label>
+              <input
+                type="email"
+                name="email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                role="presentation"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-input-left">
+              <label>Password:</label>
+              <input
+                type="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                name="password"
+                required
+                role="presentation"
+                autocomplete="off"
+              />
+            </div>
+            <div class="login-button">
+              <button type="submit">Log In to Account</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-right show" id="register">
+        <div class="col-register">
+          <div class="col-right-register">
+            <a>Register</a>
+          </div>
+          <form action="/success.html">
+            <div class="col-input-right">
+              <label>First Name:</label>
+              <input
+                type="text"
+                pattern="[a-z/A-Z]{1,25}"
+                name="firstname"
+                required
+                role="presentation"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-input-right">
+              <label>Last Name:</label>
+              <input
+                type="text"
+                name="lastname"
+                pattern="[a-z/A-Z]{1,25}"
+                required
+                role="presentation"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-input-right">
+              <label>Phone:</label>
+              <input
+                type="tel"
+                name="phone"
+                minlength="10"
+                pattern="[0-9]{1,12}"
+                required
+                role="presentation"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-input-right">
+              <label>Email:</label>
+              <input
+                type="email"
+                name="email"
+                required
+                role="presentation"
+                autocomplete="off"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              />
+            </div>
+            <div class="col-input-right">
+              <label>Gender:</label>
+              <select required>
+                <option disabled value="" selected>Select</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+              </select>
+            </div>
+            <div class="col-input-right">
+              <label>Date:</label>
+              <input
+                type="date"
+                name="date"
+                required
+                role="presentation"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-input-right">
+              <label>color:</label>
+              <input type="color" name="color" defaultValue="" required />
+            </div>
+            <div class="register-button">
+              <button type="submit">Register Here</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

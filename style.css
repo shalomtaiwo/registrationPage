@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.hdqwalls.com/download/minimalist-landscape-to-1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.col-left {
+  border-radius: 0px;
+  background: #313030;
+  box-shadow: inset 20px 20px 40px #1f1f1f, inset -20px -20px 40px #434141;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.col-right {
+  width: 50%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 0px;
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+  border-right: 2px rgba(40, 40, 40, 0.35) solid;
+}
+
+.col-login, .col-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.col-input-left, .col-input-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.col-input-left input {
+  width: 350px;
+  padding: 10px 10px 10px 90px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+.col-input-left input:focus {
+  box-shadow: -1px 1px 12px 1px rgba(238, 130, 238, 0.83);
+  -webkit-box-shadow: -1px 1px 12px 1px rgba(238, 130, 238, 0.83);
+  -moz-box-shadow: -1px 1px 12px 1px rgba(238, 130, 238, 0.83);
+  border: none;
+  outline: none;
+  color: black;
+}
+.col-input-left label {
+  color: whitesmoke;
+  width: 75px;
+  background: #ae1fad;
+  box-shadow: 1px 1px 10px #971b97, -1px -1px 10px #c523c3;
+  color: white;
+  padding: 7px 5px;
+  border-radius: 10px;
+  margin-left: 2px;
+  position: absolute;
+}
+.login-button {
+  display: flex;
+  justify-content: start;
+}
+.login-button button {
+  width: fit-content;
+  padding: 10px;
+  background: #1d204f;
+  box-shadow: 1px 1px 10px #161838, -1px -1px 10px #20245c;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+input:valid, select:valid {
+  background: url('https://www.re-plus.com/wp-content/uploads/2020/01/Tick_Mark_Dark-512.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 320px;
+  background-color: white;
+  color: black;
+  padding-right: 10px;
+}
+input:focus:invalid, select:focus:invalid {
+    background: url('https://i.pinimg.com/originals/d0/17/47/d01747c4285afa4e7a6e8656c9cd60cb.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 320px;
+    background-color: white;
+    color: red;
+    padding-right: 10px;
+  }
+
+  /* For the register button */
+
+  .col-input-right input, select {
+    width: 350px;
+    padding: 10px 10px 10px 105px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    height: 40px;
+  }
+  .col-input-right input:focus, select:focus {
+    box-shadow: -1px 1px 12px 1px rgba(237, 230, 237, 0.83);
+    -webkit-box-shadow: -1px 1px 12px 1px rgba(225, 204, 225, 0.83);
+    -moz-box-shadow: -1px 1px 12px 1px rgba(243, 210, 243, 0.83);
+    border: none;
+    outline: none;
+  }
+  .col-input-right label {
+    color: whitesmoke;
+    width: 95px;
+    background: #ae1fad;
+    box-shadow: 1px 1px 10px #971b97, -1px -1px 10px #c523c3;
+    color: white;
+    padding: 7px 5px;
+    border-radius: 10px;
+    margin-left: 2px;
+    position: absolute;
+  }
+  .register-button {
+    display: flex;
+    justify-content: end;
+  }
+  .register-button button {
+    width: fit-content;
+    padding: 10px;
+    background: violet;
+    box-shadow: 1px 1px 10px rgb(165, 72, 165), -1px -1px 10px rgb(250, 152, 250);
+    color: black;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .col-right{
+    overflow-y: scroll;
+  }
+  input, select {
+    color-scheme: dark;
+  }
+  input[type=color]
+{ 
+    background-color: #313030 !important; 
+}
+.signUp{
+    display: none;
+}
+
+
+/* Scrolling */
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
+/* Main */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  /* Dashboard */
+
+  .dashboard{
+    width: 700px;
+    height: 375px;
+    color: white;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 0px;
+    backdrop-filter: blur(9px);
+    background-color: rgba(0,0,0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+  }
+
+  /* Success Page */
+  .success{
+    width: 700px;
+    height: 375px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0px;
+    backdrop-filter: blur(9px);
+    background-color: rgba(0,0,0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+  }
+  .logout{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    background-color: black;
+    padding: 20px;
+    position: absolute;
+    margin-top: 20px !important;
+    border-radius: 10px;
+  }
+  .success img{
+    width: 150px;
+    background-position: top;
+    margin-bottom: 180px;
+  }
+  /* Responsive */
+
+@media only screen and (max-width: 788px) {
+    .body{
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+    .col-left, .col-right{
+        display: flex;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .signUp{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        height: 10vh;
+        background-color: #313030;
+    }
+    .signUp a{
+        text-decoration: none;
+        color: white;
+        border: 1px solid #ae1fad;
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 9999;
+    }
+    .show:target {
+        opacity: 1;
+        width: 100%;
+        overflow-y: auto;
+        position: fixed;
+        padding: 20px 0;
+        animation-name: example;
+        height: 90vh;
+        animation-duration: 2s;
+    }
+      
+      @keyframes example {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+      .success, .dashboard{
+        height: 100%;
+      }
+    }
+    
+    @media only screen and (max-width: 398px) {
+        input, select {
+            width: 260px !important;
+            font-size: 12px;
+          }
+          label {
+            width: 80px !important;
+            font-size: 14px;
+            padding: 7px 5px;
+          }
+    }
+    
