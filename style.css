@@ -105,7 +105,7 @@ body {
   margin-top: 20px;
   cursor: pointer;
 }
-input:valid, select:valid {
+input:valid{
   background: url('https://www.re-plus.com/wp-content/uploads/2020/01/Tick_Mark_Dark-512.png');
   background-size: 20px;
   background-repeat: no-repeat;
@@ -114,11 +114,21 @@ input:valid, select:valid {
   color: black;
   padding-right: 10px;
 }
-input:focus:invalid, select:focus:invalid {
+select:valid, input[type="date"], input[type="color"]{
+  background-color: white;
+  color: black;
+  padding-right: 10px;
+}
+input:focus:invalid{
     background: url('https://i.pinimg.com/originals/d0/17/47/d01747c4285afa4e7a6e8656c9cd60cb.png');
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 320px;
+    background-color: white;
+    color: red;
+    padding-right: 10px;
+  }
+ select:focus:invalid, input[type="date"], input[type="color"] {
     background-color: white;
     color: red;
     padding-right: 10px;
