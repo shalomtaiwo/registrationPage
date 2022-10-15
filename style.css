@@ -114,7 +114,7 @@ input:valid{
   color: black;
   padding-right: 10px;
 }
-select:valid, input[type="date"], input[type="color"]{
+select:valid, input[type="date"]:valid, input[type="color"]:valid{
   background-color: white;
   color: black;
   padding-right: 10px;
@@ -128,7 +128,7 @@ input:focus:invalid{
     color: red;
     padding-right: 10px;
   }
- select:focus:invalid, input[type="date"], input[type="color"] {
+ select:focus:invalid, input[type="date"]:invalid, input[type="color"]:invalid{
     background-color: white;
     color: red;
     padding-right: 10px;
